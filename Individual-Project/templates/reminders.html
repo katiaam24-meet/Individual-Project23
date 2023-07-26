@@ -8,11 +8,24 @@
 </head>
 <title>Reminders</title>
 <body>
+
+   
+  <nav>
+    <ul>
+      <li><a href="#home">MyDailyLife</a></li>
+      <br>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+
+
     <center>
 
     <h2>Never forget a thing</H2>
-        <h4>We know that even the best of students need a reminder every now and then. My Study Life will send you a reminder when a class is about to begin, when you have an exam, and when you have an incomplete task that is due soon. With My Study Life, you’ll never forget an assignment or miss a lecture again.</h4>
-
+       
     
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
@@ -32,10 +45,159 @@
     </ul>
 
 </center>
+<style>
 
-</body>
-</html>
 
+    /* Reset some default styles for consistency */
+body, h1, h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+/* Navigation menu styles */
+nav {
+  background-color: #333;
+  
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+/* Main content styles */
+main {
+  padding: 20px;
+}
+
+/* Footer styles */
+footer {
+  
+  padding: 10px;
+  text-align: center;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+
+    /* Reset some default styles for consistency */
+body, h1, h2, p, ul, li, form, input, button, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Georgia, serif;
+  line-height: 1.6;
+  background-color: lightblue; /* Inline style overridden by the external CSS */
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header styles */
+h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  padding: 10px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Reminder list styles */
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  body{
+    background-color: lightblue;
+  }
+</style>
     
 </body>
 </html>

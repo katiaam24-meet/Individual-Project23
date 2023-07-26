@@ -5,11 +5,19 @@
     <title>Signup</title>
 </head>
 <body>
-  <H1>  HERE YOU CAN FIND THE EVENTS THAT YOU HAVE:<H1>
+  <H1> Your Events:<H1>
     {% for index, event in events| enumerate %}
     <h2> {{ index + 1 }}. {{event['name']}}</h2>
     <h4> {{event['date']}}</h4>
     {%endfor%}
     <br>
+
+    <style type="text/css">
+    
+        body{
+            background-color: lightblue;
+        }
+
+    </style>
 </body>
 </html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/styles.css">
+
+    <meta charset="UTF-8">
+    <title>home page</title>
+</head>
+<title>Reminders</title>
+<body>
+    <center>
+
+    <h2>Never forget a thing</H2>
+        <h4>We know that even the best of students need a reminder every now and then. My Study Life will send you a reminder when a class is about to begin, when you have an exam, and when you have an incomplete task that is due soon. With My Study Life, you’ll never forget an assignment or miss a lecture again.</h4>
+
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Reminders</h1>
+    <form method="POST" action="/reminder">
+        <input type="text" name="reminder" placeholder="Enter your reminder...">
+        <button type="submit">Add Reminder</button>
+    </form>
+    <ul>
+        {% for index, reminder in reminders | enumerate %}
+        <li>
+            {{ index + 1 }}. {{ reminder }}
+            <a href="{{ url_for('delete_reminder', index=index) }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</center>
+
+</body>
+</html>
+
+    
+</body>
+</html>

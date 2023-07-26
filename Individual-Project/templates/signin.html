@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signin</title>
+</head>
+<body>
+    <form method="post" action="/">
+        <!-- Heading -->
+        <h4>
+        Log in to your account
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+        Please fill up your information below to sign in.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label>Email address*</label>
+            <div>
+                <input class="input" type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label>Password*</label>
+            <div class="input-group">
+                <input class="input" type="password"  name="password" minlength="6">
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input class= "button" type="submit"/>
+        </div>
+
+        <div>
+        </div>
+    </form>
+    <br>
+    <center>
+            <a href="/signup"><button class="button">signup</button></a>        
+    </center>
+    <style>
+        
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color:lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+
+form {
+  max-width: 500px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  color: #888;
+}
+
+
+label {
+  font-size: 14px;
+  color: #333;
+}
+
+.input{
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+
+
+.button {
+  width: 100%;
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+
+a {
+  text-align: center;
+  text-decoration: none;
+  color: #007bff;
+  margin-top: 15px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+    </style>
+</body>
+</html>

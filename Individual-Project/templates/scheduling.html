@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <section class="calendar">
+    <title>Calendar</title>
+</head>
+<body>
+    <center>
+    <h1>Calendar</h1>
+    <form method="post" action="/add_event">
+        <label for="event_name">Event Name:</label>
+        <input type="text" id="event_name" name="event_name">
+        <label for="event_date">Event Date:</label>
+        <input type="date" id="event_date" name="event_date">
+        <button type="submit">Add Event</button>
+    </form>
+
+    <table>
+        <tr>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+            <th>Sun</th>
+        </tr>
+        {% for week_data in calendar_data %}
+        <tr>
+            {% for day in week_data %}
+            <td>
+                {{ day }}
+                {% for event_date, event_name in events %}
+                    {% if event_date.day == day %}
+                        <p>{{ event_name }}</p>
+                    {% endif %}
+                {% endfor %}
+            </td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    
+</body>
+</html>

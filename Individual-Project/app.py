@@ -149,10 +149,6 @@ def show_events ():
 def contact ():
     return render_template('contact.html')
 
-@app.route('/home', methods=['GET', 'POST'])
-def home ():
-    return render_template('home.html')
-
 
 @app.route('/surprise', methods=['GET', 'POST'])
 def surprise ():
@@ -168,3 +164,5 @@ def tips ():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+
